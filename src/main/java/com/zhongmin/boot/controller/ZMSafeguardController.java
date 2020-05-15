@@ -23,7 +23,6 @@ public class ZMSafeguardController {
 
     @ResponseBody
     @GetMapping("/list")
-    //@RequiresPermissions("blog:bContent:bContent")
     public String list(){
         List<ZMSafeguard> zmSafeguardList = zmSafeguardService.selectAll();
         System.out.println(zmSafeguardList.size());
